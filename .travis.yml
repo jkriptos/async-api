@@ -6,6 +6,7 @@ services:
   - docker
 
 after_success:
-  - docker build -t wu/async-api ./docker-build
   - docker login -e="jkriptos+docker@gmail.com" -u="jkriptos" -p="kakarotto"
+  - docker build -t wu/async-api ./docker-build
+  - docker images
   - docker push wu/async-api
