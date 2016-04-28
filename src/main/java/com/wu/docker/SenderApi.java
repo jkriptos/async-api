@@ -12,6 +12,6 @@ public class SenderApi {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String getIt() {
-        return "{ firstname: 'Silvio', lastname: 'Rodriguez', age: 32, rating: 4.3 }";
+        return "{ firstname: 'Erick', lastname: 'Clapton', age: 45, rating: 4.3 }";
     }
 }
