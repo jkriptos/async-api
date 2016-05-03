@@ -43,6 +43,6 @@ public class SenderApiTest {
     @Test
     public void testGetIt() {
         String responseMsg = target.path("senders").request().get(String.class);
-        assertEquals("{ firstname: 'Erick', lastname: 'Clapton', age: 45, rating: 4.3 }", responseMsg);
+        assertEquals("{ firstname: 'Prince', lastname: '', age: 57, rating: 4.3 }", responseMsg);
     }
 }
